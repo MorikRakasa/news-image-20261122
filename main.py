@@ -26,7 +26,8 @@ def main() -> int:
     src = os.path.join(HERE, "entry.png")
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
     os.makedirs(out_dir, exist_ok=True)
-    shutil.copyfile(src, os.path.join(out_dir, "entry.png"))
+    dest = os.path.join(out_dir, "entry.png")
+    shutil.copyfile(src, dest)
     return 0
 
 
