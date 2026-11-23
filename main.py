@@ -7,6 +7,7 @@ stories across 7 regions, each dated that day, with a date check naming
 the Friday and Thursday news left out. Leads: COP31 collapses with no
 deal, Iran strikes Bahrain, a Russian drone flattens a Kyiv apartment
 block. The front page is pre-rendered and shipped in this repository.
+The copy is deterministic: two runs write the same bytes.
 This program only copies it to the output directory, using the standard
 library alone: the make.fun sandbox has no Pillow, so the entrypoint
 must never import it.
